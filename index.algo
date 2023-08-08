@@ -1,0 +1,24 @@
+Algorithm SentenceStats
+    Input: sentence (string)
+    Output: length (integer), wordCount (integer), vowelCount (integer)
+
+    length <- 0
+    wordCount <- 1
+    vowelCount <- 0
+    vowels <- ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+    for each character in sentence
+        if character is a letter
+            length <- length + 1
+
+            if character is a vowel
+                vowelCount <- vowelCount + 1
+        
+        if character is a space
+            wordCount <- wordCount + 1
+
+        if character is a point
+            break
+
+    return length, wordCount, vowelCount
+End Algorithm
